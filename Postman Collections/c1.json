@@ -1,0 +1,125 @@
+{
+  "variables": [],
+  "info": {
+    "name": "c1",
+    "_postman_id": "c63ae80f-cb92-92f0-e1e6-be2258960e04",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "29a2aceb-c339-d6bf-7fad-1e95417408d2",
+      "name": "r1",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "postman.setEnvironmentVariable(\"a\", \"2\");"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "httpbin.org/post?a={{a}}",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          },
+          {
+            "key": "a",
+            "value": "b",
+            "description": "",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"a\": \"b\",\n\t\"c\": \"d\"\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "5360f43a-5192-9b8c-97ff-663b4038111f",
+      "name": "r2",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "postman.setEnvironmentVariable(\"a\", \"2\");"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "httpbin.org/post?a={{a}}",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          },
+          {
+            "key": "a",
+            "value": "b",
+            "description": "",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"a\": \"b\",\n  \"c\": \"d\"\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "72d4cd0d-c4ac-37df-25d2-9a9dab1cd4cc",
+      "name": "r3",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "postman.setEnvironmentVariable(\"a\", \"2\");"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "httpbin.org/post?a={{a}}",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          },
+          {
+            "key": "a",
+            "value": "b",
+            "description": "",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"a\": \"b\",\n  \"c\": \"d\"\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}
