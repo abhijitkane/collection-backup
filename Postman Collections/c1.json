@@ -60,7 +60,26 @@
         }
       ],
       "request": {
-        "url": "httpbin.org/post?a={{a}}",
+        "url": {
+          "raw": "httpbin.org/post?a={{a}}",
+          "auth": {},
+          "host": [
+            "httpbin",
+            "org"
+          ],
+          "path": [
+            "post"
+          ],
+          "query": [
+            {
+              "key": "a",
+              "value": "{{a}}",
+              "equals": true,
+              "description": ""
+            }
+          ],
+          "variable": []
+        },
         "method": "POST",
         "header": [
           {
